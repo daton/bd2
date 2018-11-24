@@ -48,7 +48,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">SB Admin v2.0</a>
+                <a class="navbar-brand" href="${pageContext.request.contextPath}/pages/index.jsp">Proyecto BD2</a>
             </div>
             <!-- /.navbar-header -->
 
@@ -277,16 +277,19 @@
                             <!-- /input-group -->
                         </li>
                         <li>
-                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                            <a href="${pageContext.request.contextPath}/pages/index.jsp"><i class="fa fa-home fa-fw"></i> Principal</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Almacén<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-bank fa-fw"></i> Almacén<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
                                    <a href="${pageContext.request.contextPath}/pages/guardar_almacen.jsp">Guardar</a>
                                 </li>
                                 <li>
                                     <a href="${pageContext.request.contextPath}/pages/buscar_todos_almacen.jsp">Buscar Todos</a>
+                                </li>
+                                <li>
+                                    <a href="${pageContext.request.contextPath}/pages/buscar_porid_almacen.jsp">Buscar por ID</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
