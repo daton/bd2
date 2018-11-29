@@ -374,6 +374,8 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1 class="page-header">Guardar Almacen</h1>
+                    <p>Introduce el numero de almacen y su ubicacion</p> 
+                    <button class="btn btn-primary" id="guardar"> Guardar Almacen</button>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
@@ -400,7 +402,24 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="${pageContext.request.contextPath}/dist/js/sb-admin-2.js"></script>
-
+    <script>
+        $("#guardar").click(function(){
+           // alert('Probando el cliqueo')
+           //Vamos a utilizar ajax!!!!
+           $.ajax('http://localhost:8084/bd2/guardar-almacen',{
+               type:'post',
+               data:{
+                   numero:666,
+                   ubicacion:'Ecaterror'
+               },
+               success:function(datos){
+                   alert(datos);
+               }
+           })
+           
+        })
+        
+    </script>
 </body>
 
 </html>

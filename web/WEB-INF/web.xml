@@ -4,9 +4,17 @@
         <servlet-name>ServletAutenticar</servlet-name>
         <servlet-class>com.jc.controlador.ServletAutenticar</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ServletGuardarAlmacen</servlet-name>
+        <servlet-class>com.jc.controlador.ServletGuardarAlmacen</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ServletAutenticar</servlet-name>
         <url-pattern>/autenticar.php</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletGuardarAlmacen</servlet-name>
+        <url-pattern>/guardar-almacen</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
